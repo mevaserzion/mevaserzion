@@ -1,8 +1,6 @@
-// import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { useLanguageStore } from '../store';
 import { consts } from '../consts';
-// import NavItem from './NavItem';
 import { Link } from 'react-router-dom';
 
 const Navbar = styled.div`
@@ -38,31 +36,31 @@ const NavItem = styled.div`
 `;
 
 export default function NavBar() {
-  const lang = useLanguageStore((state) => state.lang);
+  const lang = useLanguageStore((state) => state.lang) as 'en' | 'he'; // ✅ Ensures correct type
   const en = useLanguageStore((state) => state.english);
   const he = useLanguageStore((state) => state.hebrew);
 
   return (
     <Navbar>
       <Group>
-        <Link className='link' to='/'>
-          <NavItem>{consts.home[lang].title}</NavItem>
-        </Link>
-        <Link className='link' to='/about'>
-          <NavItem>{consts.about[lang].title}</NavItem>
-        </Link>
-        <Link className='link' to='/schedule'>
-          <NavItem>{consts.schedule[lang].title}</NavItem>
-        </Link>
-        <Link className='link' to='/shiurim'>
-          <NavItem>{consts.shiurim[lang].title}</NavItem>
-        </Link>
-        <Link className='link' to='/contact'>
-          <NavItem>{consts.contact[lang].title}</NavItem>
-        </Link>
-        <Link className='link' to='/donate'>
-          <NavItem>{consts.donate[lang].title}</NavItem>
-        </Link>
+        <NavItem as={Link} to='/'>
+          {consts.home[lang].title}
+        </NavItem>
+        <NavItem as={Link} to='/about'>
+          {consts.about[lang].title}
+        </NavItem>
+        <NavItem as={Link} to='/schedule'>
+          {consts.schedule[lang].title}
+        </NavItem>
+        <NavItem as={Link} to='/shiurim'>
+          {consts.shiurim[lang].title}
+        </NavItem>
+        <NavItem as={Link} to='/contact'>
+          {consts.contact[lang].title}
+        </NavItem>
+        <NavItem as={Link} to='/donate'>
+          {consts.donate[lang].title}
+        </NavItem>
       </Group>
       <Group>
         <NavItem onClick={he}>HE</NavItem>
