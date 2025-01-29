@@ -1,4 +1,4 @@
-import NavBar from './components/navbar';
+import NavBar from './components/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -12,9 +12,9 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className='main'>
-      <NavBar />
-      <Router>
+    <Router>
+      <div className='main'>
+        <NavBar />
         <div className='app'>
           <Routes>
             <Route path='/' element={<Home />} />
@@ -25,9 +25,9 @@ function App() {
             <Route path='/contact' element={<Contact />} />
           </Routes>
         </div>
-      </Router>
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

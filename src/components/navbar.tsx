@@ -2,6 +2,8 @@
 import styled from 'styled-components';
 import { useLanguageStore } from '../store';
 import { consts } from '../consts';
+// import NavItem from './NavItem';
+import { Link } from 'react-router-dom';
 
 const Navbar = styled.div`
   margin: 0;
@@ -26,6 +28,8 @@ const NavItem = styled.div`
   margin: 10px;
   cursor: pointer;
   text-align: center;
+  text-decoration: none;
+  color: black;
 
   &:hover {
     background-color: blue;
@@ -41,12 +45,24 @@ export default function NavBar() {
   return (
     <Navbar>
       <Group>
-        <NavItem>{consts.home[lang].title}</NavItem>
-        <NavItem>{consts.about[lang].title}</NavItem>
-        <NavItem>{consts.schedule[lang].title}</NavItem>
-        <NavItem>{consts.shiurim[lang].title}</NavItem>
-        <NavItem>{consts.contact[lang].title}</NavItem>
-        <NavItem>{consts.donate[lang].title}</NavItem>
+        <Link className='link' to='/'>
+          <NavItem>{consts.home[lang].title}</NavItem>
+        </Link>
+        <Link className='link' to='/about'>
+          <NavItem>{consts.about[lang].title}</NavItem>
+        </Link>
+        <Link className='link' to='/schedule'>
+          <NavItem>{consts.schedule[lang].title}</NavItem>
+        </Link>
+        <Link className='link' to='/shiurim'>
+          <NavItem>{consts.shiurim[lang].title}</NavItem>
+        </Link>
+        <Link className='link' to='/contact'>
+          <NavItem>{consts.contact[lang].title}</NavItem>
+        </Link>
+        <Link className='link' to='/donate'>
+          <NavItem>{consts.donate[lang].title}</NavItem>
+        </Link>
       </Group>
       <Group>
         <NavItem onClick={he}>HE</NavItem>
