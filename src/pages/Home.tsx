@@ -1,7 +1,7 @@
 // import styled from 'styled-components';
 import { useLanguageStore } from '../store';
 import { consts } from '../consts';
-import Par from '../components/Text';
+import Par from '../components/Par';
 
 export default function Home() {
   const lang = useLanguageStore((state) => state.lang);
