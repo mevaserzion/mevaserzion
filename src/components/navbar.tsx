@@ -3,12 +3,12 @@ import { useLanguageStore } from '../store';
 import { consts } from '../consts';
 import { Link } from 'react-router-dom';
 
-const Navbar = styled.div`
+const Navbar = styled.div<{ $isHebrew: boolean }>`
   margin: 0;
   padding: 0;
   background-color: white;
   display: flex;
-  flex-direction: row;
+  flex-direction: ${({ $isHebrew }) => ($isHebrew ? 'row-reverse' : 'row')};
   height: 50px;
   width: 100vw;
   justify-content: space-between;
@@ -36,12 +36,12 @@ const NavItem = styled.div`
 `;
 
 export default function NavBar() {
-  const lang = useLanguageStore((state) => state.lang) as 'en' | 'he'; // ✅ Ensures correct type
+  const lang = useLanguageStore((state) => state.lang);
   const en = useLanguageStore((state) => state.english);
   const he = useLanguageStore((state) => state.hebrew);
 
   return (
-    <Navbar>
+    <Navbar $isHebrew={lang === 'he'}>
       <Group>
         <NavItem as={Link} to='/'>
           {consts.home[lang].title}
