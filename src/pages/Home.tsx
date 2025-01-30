@@ -10,7 +10,6 @@ export default function Home() {
   return (
     <>
       <Image path={shulhero} alt='shul' />
-      {/* <img src={shulhero} alt='mevaser zion' /> */}
       <Par type='h1' text={consts.home[lang].title} />
       <Par type='p' text={consts.home[lang]?.content} />
     </>

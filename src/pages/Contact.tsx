@@ -1,12 +1,13 @@
 import { useLanguageStore } from '../store';
 import { consts } from '../consts';
+import Par from '../components/Par';
 
 export default function Contact() {
   const lang = useLanguageStore((state) => state.lang);
   return (
     <>
-      <h1>{consts.contact[lang].title}</h1>
-      <p>{consts.contact[lang].content}</p>
+      <Par type='h1' text={consts.contact[lang].title} />
+      <Par type='p' text={consts.contact[lang].content} />
     </>
   );
 }

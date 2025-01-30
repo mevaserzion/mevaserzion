@@ -10,7 +10,7 @@ export default function Shiurim() {
       <Par type='h1' text={consts.shiurim[lang].title} />
       <p>{consts.shiurim[lang].content}</p>
 
-      <Par type='h2' text='Youtube' />
+      <Par type='h2' text={consts.shiurim[lang].heading2} />
       <iframe
         style={{ borderRadius: '12px', width: '100%', height: '315px' }}
         src='https://www.youtube.com/embed/videoseries?list=@baruch_Weintraub_Mevaser_Zion'
@@ -19,7 +19,7 @@ export default function Shiurim() {
         loading='lazy'
       ></iframe>
 
-      <Par type='h2' text='Spotify' />
+      <h2>Spotify</h2>
       <iframe
         style={{ borderRadius: '12px', width: '100%', height: '352px' }}
         src='https://open.spotify.com/embed/show/0iJnheMf7CfA98IDKxxbi4?utm_source=generator'

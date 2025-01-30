@@ -14,9 +14,9 @@ const NavContainer = styled.div<{ $isHebrew: boolean }>`
   justify-content: space-between;
 `;
 
-const Group = styled.div`
+const Group = styled.div<{ $isHebrew: boolean }>`
   display: flex;
-  flex-direction: row;
+  flex-direction: ${({ $isHebrew }) => ($isHebrew ? 'row-reverse' : 'row')};
 `;
 
 const NavItem = styled.div`
@@ -42,7 +42,7 @@ export default function Navbar() {
 
   return (
     <NavContainer $isHebrew={lang === 'he'}>
-      <Group>
+      <Group $isHebrew={lang === 'he'}>
         <NavItem as={Link} to='/'>
           {consts.home[lang].title}
         </NavItem>
@@ -58,14 +58,20 @@ export default function Navbar() {
         <NavItem as={Link} to='/contact'>
           {consts.contact[lang].title}
         </NavItem>
-        <NavItem as={Link} to='/donate'>
+        <NavItem
+          as={Link}
+          to='https://app.icount.co.il/m/4be4e/c53e2p4u664a0b9a006?utm_source=iCount&utm_medium=paypage&utm_campaign=4https://app.icount.co.il/m/4be4e/c53e2p4u664a0b9a006?utm_source=iCount&utm_medium=paypage&utm_campaign=4'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           {consts.donate[lang].title}
         </NavItem>
       </Group>
-      <Group>
-        <NavItem onClick={he}>HE</NavItem>
-        <NavItem onClick={en}>EN</NavItem>
-      </Group>
+      {lang === 'he' ? (
+        <NavItem onClick={en}>English</NavItem>
+      ) : (
+        <NavItem onClick={he}>עברית</NavItem>
+      )}
     </NavContainer>
   );
 }

@@ -1,8 +1,8 @@
 export const consts: Record<
   string,
   {
-    en: { title: string; content: string };
-    he: { title: string; content: string };
+    en: { title: string; content: string; heading2?: string };
+    he: { title: string; content: string; heading2?: string };
   }
 > = {
   home: {
@@ -26,8 +26,8 @@ export const consts: Record<
     he: { title: 'לוח זמנים', content: '' }
   },
   shiurim: {
-    en: { title: 'Shiurim', content: '' },
-    he: { title: 'שיעורים', content: '' }
+    en: { title: 'Shiurim', content: '', heading2: 'YouTube' },
+    he: { title: 'שיעורים', content: '', heading2: 'יוטיוב' }
   },
   contact: {
     en: { title: 'Contact', content: '' },

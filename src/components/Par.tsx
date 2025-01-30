@@ -4,7 +4,7 @@ import { useLanguageStore } from '../store';
 type TextType = 'p' | 'h1' | 'h2' | 'h3';
 
 interface ParProps {
-  text: string;
+  text?: string;
   type: TextType;
 }
 
