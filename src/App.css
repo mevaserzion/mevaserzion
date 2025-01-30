@@ -1,12 +1,15 @@
 html, body {
   height: 100%;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1200px;
+  background: steelblue
 }
 
 .main {
   display: flex;
   flex-direction: column;
   min-height: 100vh; 
+  background: white
 }
 
 .app {

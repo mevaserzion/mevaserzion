@@ -10,7 +10,7 @@ const Navbar = styled.div<{ $isHebrew: boolean }>`
   display: flex;
   flex-direction: ${({ $isHebrew }) => ($isHebrew ? 'row-reverse' : 'row')};
   height: 50px;
-  width: 100vw;
+  width: 100%;
   justify-content: space-between;
 `;
 
@@ -30,7 +30,7 @@ const NavItem = styled.div`
   color: black;
 
   &:hover {
-    background-color: blue;
+    background-color: steelblue;
     color: white;
   }
 `;
