@@ -1,4 +1,3 @@
-import NavBar from './components/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -8,13 +7,14 @@ import Shiurim from './pages/Shiurim';
 import Contact from './pages/Contact';
 
 import './App.css';
+import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 function App() {
   return (
     <Router>
       <div className='main'>
-        <NavBar />
+        <Navbar />
         <div className='app'>
           <Routes>
             <Route path='/' element={<Home />} />
