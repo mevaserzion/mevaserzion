@@ -47,19 +47,19 @@ export default function Navbar() {
     <NavContainer $isHebrew={lang === 'he'}>
       <Group $isHebrew={lang === 'he'}>
         <NavItem as={Link} to='/'>
-          {home[lang].title}
+          <p>{home[lang].title}</p>
         </NavItem>
         <NavItem as={Link} to='/about'>
-          {about[lang].title}
+          <p>{about[lang].title}</p>
         </NavItem>
         <NavItem as={Link} to='/schedule'>
-          {schedule[lang].title}
+          <p>{schedule[lang].title}</p>
         </NavItem>
         <NavItem as={Link} to='/shiurim'>
-          {shiurim[lang].title}
+          <p>{shiurim[lang].title}</p>
         </NavItem>
         <NavItem as={Link} to='/contact'>
-          {contact[lang].title}
+          <p>{contact[lang].title}</p>
         </NavItem>
         <NavItem
           as={Link}

@@ -28,3 +28,7 @@ footer {
 .link {
   text-decoration: none;
 }
+
+h1, p{
+  font-family: "Roboto", serif;
+}
