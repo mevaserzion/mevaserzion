@@ -31,6 +31,7 @@ const NavItem = styled.div`
   text-align: center;
   text-decoration: none;
   color: black;
+  font-family: 'Roboto', serif;
 
   &:hover {
     background-color: steelblue;
@@ -47,19 +48,19 @@ export default function Navbar() {
     <NavContainer $isHebrew={lang === 'he'}>
       <Group $isHebrew={lang === 'he'}>
         <NavItem as={Link} to='/'>
-          <p>{home[lang].title}</p>
+          {home[lang].title}
         </NavItem>
         <NavItem as={Link} to='/about'>
-          <p>{about[lang].title}</p>
+          {about[lang].title}
         </NavItem>
         <NavItem as={Link} to='/schedule'>
-          <p>{schedule[lang].title}</p>
+          {schedule[lang].title}
         </NavItem>
         <NavItem as={Link} to='/shiurim'>
-          <p>{shiurim[lang].title}</p>
+          {shiurim[lang].title}
         </NavItem>
         <NavItem as={Link} to='/contact'>
-          <p>{contact[lang].title}</p>
+          {contact[lang].title}
         </NavItem>
         <NavItem
           as={Link}
