@@ -2,20 +2,37 @@ html, body {
   height: 100%;
   margin: 0 auto;
   max-width: 1200px;
-  background: steelblue
+  background: steelblue;
 }
+
 
 .main {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; 
-  background: white
+  min-height: 100vh;
+  background: white;
+  width: 100%;
 }
 
 .app {
   padding: 50px;
   margin: 10px;
   flex-grow: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .app {
+    padding: 20px;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    padding: 15px;
+    margin: 0;
+  }
 }
 
 footer {
@@ -25,10 +42,46 @@ footer {
   padding: 10px;
 }
 
+/* Ensure footer sticks to the bottom */
+@media (max-width: 768px) {
+  footer {
+    padding: 15px;
+  }
+}
+
 .link {
   text-decoration: none;
 }
 
-h1, p{
+/* Make typography more responsive */
+h1, p {
   font-family: "Roboto", serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
 }
