@@ -1,5 +1,5 @@
 import { useLanguageStore } from '../store';
-import { consts } from '../consts';
+import { schedule } from '../consts';
 import Par from '../components/Par';
 
 export default function Schedule() {
@@ -7,7 +7,7 @@ export default function Schedule() {
 
   return (
     <>
-      <Par type='h1' text={consts.schedule[lang].title} />
+      <Par tag='h1' text={schedule[lang].title} />
       {/* <Par type='p' text={consts.schedule[lang].content} /> */}
       <iframe
         loading='lazy'

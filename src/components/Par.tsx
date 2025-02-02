@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 import { useLanguageStore } from '../store';
 
-type TextType = 'p' | 'h1' | 'h2' | 'h3';
+// type TextType = 'p' | 'h1' | 'h2' | 'h3';
 
 interface ParProps {
   text?: string;
-  type: TextType;
+  tag: string;
 }
 
 const P = styled.p<{ $isHebrew: boolean }>`
@@ -14,10 +14,10 @@ const P = styled.p<{ $isHebrew: boolean }>`
   unicode-bidi: bidi-override;
 `;
 
-export default function Par({ text, type = 'p' }: ParProps) {
+export default function Par({ text, tag = 'p' }: ParProps) {
   const lang = useLanguageStore((state) => state.lang);
   return (
-    <P as={type} $isHebrew={lang === 'he'}>
+    <P as={tag} $isHebrew={lang === 'he'}>
       {text}
     </P>
   );

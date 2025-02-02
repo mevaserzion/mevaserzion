@@ -1,5 +1,5 @@
 import { useLanguageStore } from '../store';
-import { consts } from '../consts';
+import { shiurim } from '../consts';
 import Par from '../components/Par';
 
 export default function Shiurim() {
@@ -7,10 +7,10 @@ export default function Shiurim() {
 
   return (
     <>
-      <Par type='h1' text={consts.shiurim[lang].title} />
-      <p>{consts.shiurim[lang].content}</p>
+      <Par tag='h1' text={shiurim[lang].title} />
+      {/* <p>{shiurim[lang].content}</p> */}
 
-      <Par type='h2' text={consts.shiurim[lang].heading2} />
+      <Par tag='h2' text={shiurim[lang].title2} />
       <iframe
         style={{ borderRadius: '12px', width: '100%', height: '315px' }}
         src='https://www.youtube.com/embed/videoseries?list=@baruch_Weintraub_Mevaser_Zion'

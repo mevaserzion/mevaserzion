@@ -1,6 +1,6 @@
 // import styled from 'styled-components';
 import { useLanguageStore } from '../store';
-import { consts } from '../consts';
+import { home } from '../consts';
 import Par from '../components/Par';
 import Image from '../components/Image';
 import shulhero from '../assets/shul.jpg';
@@ -10,8 +10,10 @@ export default function Home() {
   return (
     <>
       <Image path={shulhero} alt='shul' />
-      <Par type='h1' text={consts.home[lang].title} />
-      <Par type='p' text={consts.home[lang]?.content} />
+      <Par tag='h1' text={home[lang].title} />
+      {home[lang].content?.map((info) => (
+        <Par tag={info.tag} text={info.text} />
+      ))}
     </>
   );
 }

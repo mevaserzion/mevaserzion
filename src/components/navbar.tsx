@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { useLanguageStore } from '../store';
-import { consts } from '../consts';
+import { home, about, contact, schedule, shiurim, donate } from '../consts';
 import { Link } from 'react-router-dom';
 
 const NavContainer = styled.div<{ $isHebrew: boolean }>`
@@ -21,6 +21,9 @@ const Group = styled.div<{ $isHebrew: boolean }>`
 
 const NavItem = styled.div`
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 100%;
   padding: 10px;
   margin: 10px;
@@ -44,19 +47,19 @@ export default function Navbar() {
     <NavContainer $isHebrew={lang === 'he'}>
       <Group $isHebrew={lang === 'he'}>
         <NavItem as={Link} to='/'>
-          {consts.home[lang].title}
+          {home[lang].title}
         </NavItem>
         <NavItem as={Link} to='/about'>
-          {consts.about[lang].title}
+          {about[lang].title}
         </NavItem>
         <NavItem as={Link} to='/schedule'>
-          {consts.schedule[lang].title}
+          {schedule[lang].title}
         </NavItem>
         <NavItem as={Link} to='/shiurim'>
-          {consts.shiurim[lang].title}
+          {shiurim[lang].title}
         </NavItem>
         <NavItem as={Link} to='/contact'>
-          {consts.contact[lang].title}
+          {contact[lang].title}
         </NavItem>
         <NavItem
           as={Link}
@@ -64,7 +67,7 @@ export default function Navbar() {
           target='_blank'
           rel='noopener noreferrer'
         >
-          {consts.donate[lang].title}
+          {donate[lang].title}
         </NavItem>
       </Group>
       {lang === 'he' ? (
