@@ -8,7 +8,6 @@ export default function Schedule() {
   return (
     <>
       <Par tag='h1' text={schedule[lang].title} />
-      {/* <Par type='p' text={consts.schedule[lang].content} /> */}
       <iframe
         loading='lazy'
         style={{

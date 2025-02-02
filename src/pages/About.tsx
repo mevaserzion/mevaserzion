@@ -5,6 +5,7 @@ import Par from '../components/Par';
 
 export default function About() {
   const lang = useLanguageStore((state) => state.lang);
+
   return (
     <>
       <Par tag='h1' text={about[lang].title} />
