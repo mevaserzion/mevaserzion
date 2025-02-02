@@ -36,7 +36,24 @@ export const home: Constant = {
 };
 
 export const about: Constant = {
-  en: { title: 'About', content: [{ tag: 'p', text: '' }] },
+  en: {
+    title: 'About',
+    content: [
+      {
+        tag: 'p',
+        text: `Mevaser Zion is a vibrant Modern Orthodox community located in Tel Mond, a suburban town in Israel's Sharon region. The community is known for its active engagement in religious and social activities, centered around the Mevaser Zion Synagogue. This synagogue serves as a hub for religious services, holiday programming, and community events, playing a pivotal role in welcoming and assisting new immigrant families as they acclimate to life in Israel.`
+      },
+
+      {
+        tag: 'p',
+        text: `The synagogue offers a range of classes and programs in both Hebrew and English, catering to the spiritual and educational needs of its members. The community's commitment to education is further exemplified by the local religious elementary school, Ohr Torah Tel Mond, recognized as a leading institution in the Sharon region.`
+      },
+      {
+        tag: 'p',
+        text: `In June 2013, the Mevaser Zion community celebrated the inauguration of their newly built synagogue, marking a significant milestone in their development. The event was attended by notable figures, including Naftali Bennett, the then Minister for the Economy. `
+      }
+    ]
+  },
   he: { title: 'אודות', content: [] }
 };
 

@@ -8,7 +8,9 @@ export default function About() {
   return (
     <>
       <Par tag='h1' text={about[lang].title} />
-      {/* <Par tag='p' text={about[lang].content} /> */}
+      {about[lang].content?.map((info) => (
+        <Par tag={info.tag} text={info.text} />
+      ))}
     </>
   );
 }
