@@ -12,7 +12,7 @@ export default function Home() {
       <Image path={shulhero} alt='shul' />
       <Par tag='h1' text={home[lang].title} />
       {home[lang].content?.map((info) => (
-        <Par tag={info.tag} text={info.text} />
+        <Par id={info?.id} tag={info.tag} text={info.text} />
       ))}
     </>
   );

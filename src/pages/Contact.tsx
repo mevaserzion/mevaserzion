@@ -7,7 +7,11 @@ export default function Contact() {
   return (
     <>
       <Par tag='h1' text={contact[lang].title} />
-      {/* <Par tag='p' text={contact[lang].content} /> */}
+      {contact[lang].content?.map((info) => (
+        <Par id={info?.id} tag={info.tag} text={info.text} />
+      ))}
+
+      <Par tag='h1' text="There's going to be a form here!!!" />
     </>
   );
 }
