@@ -18,12 +18,12 @@ export const home: Constant = {
     title: 'Welcome to Mevaser Zion',
     content: [
       {
-        id: 2,
+        id: 1,
         tag: 'p',
         text: `Mevaser Zion is a warm and vibrant religious community located in Tel Mond. Rooted in a strong sense of Torah, chesed, and mutual support, we welcome families and individuals from diverse backgrounds who are seeking a dynamic and engaging Kehilla. Our members are actively involved in Tefilot, learning programs, communal events, and initiatives to support one another in times of both joy and challenge.`
       },
       {
-        id: 12,
+        id: 2,
         tag: 'p',
         text: `Whether you are a long-time resident or new to the area, we invite you to join us and experience the unique spirit of Mevaser Zion.`
       },
@@ -34,32 +34,32 @@ export const home: Constant = {
         text: `Mevaser Zion offers a full range of tefilot and religious services, ensuring a welcoming and meaningful davening experience for all.`
       },
       {
-        id: 1,
+        id: 5,
         tag: 'li',
         text: `⁠Daily Minyanim: Shacharit, Mincha, and Maariv`
       },
       {
-        id: 1,
+        id: 6,
         tag: 'li',
         text: `⁠Shabbat Services: Held in the Main Sanctuary and in the Hall, with ‘satellite minyanim in various parts of Tel Mond, especially in the Nof Yaldut minyan`
       },
       {
-        id: 1,
+        id: 7,
         tag: 'li',
         text: `⁠Children’s and Youth Minyan: A range of chidren’s tefilot and a special Mussaf service designed for younger members`
       },
       {
-        id: 1,
+        id: 8,
         tag: 'li',
         text: `⁠Women's Leining: Torah reading for women on special occasions`
       },
       {
-        id: 1,
+        id: 9,
         tag: 'li',
         text: `⁠Special Tefillot: Tefillot for all the Chagim including a musical Tefila on Yom Haatzmaut and other holidays`
       },
       {
-        id: 1,
+        id: 10,
         tag: 'li',
         text: `⁠Community Shiurim & Learning Programs: Various weekly and special shiurim throughout the week in Hebrew and English`
       }
@@ -69,12 +69,12 @@ export const home: Constant = {
     title: 'בית',
     content: [
       {
-        id: 2,
+        id: 1,
         tag: 'p',
         text: `מבשר ציון היא קהילה דתית חמה ותוססת השוכנת בתל מונד. מושרשים בתחושה חזקה של תורה, חסד ותמיכה הדדית, אנו מקבלים בברכה משפחות ויחידים מרקע מגוון המחפשים קהילה דינמית ומרתקת. חברינו מעורבים באופן פעיל בתפילות, תוכניות למידה, אירועים משותפים ויוזמות לתמיכה זה בזה בזמנים של שמחה ואתגר כאחד.`
       },
       {
-        id: 12,
+        id: 2,
         tag: 'p',
         text: `בין אם אתה תושב ותיק או חדש באזור, אנו מזמינים אותך להצטרף אלינו ולחוות את הרוח הייחודית של מבשר ציון.`
       },
@@ -85,32 +85,32 @@ export const home: Constant = {
         text: `מבשר ציון מציע מגוון רחב של תפילות ושירותי דת, המבטיחים חווית התעוררות מסבירת פנים ומשמעותית לכולם.`
       },
       {
-        id: 1,
+        id: 5,
         tag: 'li',
         text: `⁠מניינים יומיים: שחרית, מנחה ומעריב`
       },
       {
-        id: 1,
+        id: 6,
         tag: 'li',
         text: `שירותי השבת: מתקיימים בקודש המרכזי ובהיכל, עם מניינים לוויינים באזורים שונים בתל מונד, במיוחד במניין נוף ילדות.`
       },
       {
-        id: 1,
+        id: 7,
         tag: 'li',
         text: `מניין ילדים ונוער: מגוון תפילות לילדים ושירות מוסף מיוחד המיועד לחברים הצעירים יותר`
       },
       {
-        id: 1,
+        id: 8,
         tag: 'li',
         text: `קריאת נשים: קריאת תורה לנשים באירועים מיוחדים`
       },
       {
-        id: 1,
+        id: 9,
         tag: 'li',
         text: `⁠תפילות מיוחדות: תפילות לכל החגים כולל תפילה מוזיקלית ביום העצמאות ובחגים נוספים`
       },
       {
-        id: 1,
+        id: 10,
         tag: 'li',
         text: `שיעורים קהילתיים ותוכניות למידה: שיעורים שבועיים ומיוחדים שונים לאורך השבוע בעברית ובאנגלית`
       }

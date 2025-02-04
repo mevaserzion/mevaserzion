@@ -37,7 +37,6 @@ export default function Schedule() {
           padding: '0',
           margin: '0'
         }}
-        // src='https://www.canva.com/design/DAGaxVIehac/atI8pr4vJoKb-xfsSPkWYA/view?embed'
         src={iframeSrc || ''}
       ></iframe>
     </>

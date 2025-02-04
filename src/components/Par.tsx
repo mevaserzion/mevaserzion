@@ -16,7 +16,7 @@ const P = styled.p<{ $isHebrew: boolean }>`
 export default function Par({ text, tag = 'p', id }: ParProps) {
   const lang = useLanguageStore((state) => state.lang);
   return (
-    <P as={tag} $isHebrew={lang === 'he'} id={id?.toString()}>
+    <P as={tag} $isHebrew={lang === 'he'} key={id?.toString()}>
       {text}
     </P>
   );

@@ -10,7 +10,7 @@ export default function About() {
     <>
       <Par tag='h1' text={about[lang].title} />
       {about[lang].content?.map((info) => (
-        <Par tag={info.tag} text={info.text} />
+        <Par tag={info.tag} text={info.text} key={info.id} />
       ))}
     </>
   );
