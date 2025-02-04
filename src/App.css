@@ -54,7 +54,7 @@ footer {
 }
 
 /* Make typography more responsive */
-h1, p {
+h1, h2, h3, h4, h5, h6, li, p {
   font-family: "Roboto", serif;
 }
 
