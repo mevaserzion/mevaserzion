@@ -21,7 +21,7 @@ export default function Schedule() {
   }, []);
 
   const iframeSrc: string | undefined =
-    scheduleURL.length > 0 ? scheduleURL[1][0] + '?embed' : undefined;
+    scheduleURL.length > 0 ? scheduleURL[1][0] : undefined;
 
   return (
     <>
