@@ -1,7 +1,15 @@
 import styled from 'styled-components';
 import { useState, useEffect } from 'react';
 import { useLanguageStore } from '../store';
-import { home, about, contact, schedule, shiurim, donate } from '../consts';
+import {
+  home,
+  about,
+  contact,
+  schedule,
+  shiurim,
+  donate,
+  history
+} from '../consts';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import logo from '../assets/logo.jpeg';
@@ -147,6 +155,9 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <NavItem as={Link} to='/about'>
           {about[lang].title}
+        </NavItem>
+        <NavItem as={Link} to='/history'>
+          {history[lang].title}
         </NavItem>
         <NavItem as={Link} to='/schedule'>
           {schedule[lang].title}

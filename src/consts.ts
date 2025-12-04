@@ -589,3 +589,26 @@ export const donate: Constant = {
   en: { title: 'Donate' },
   he: { title: 'תרומה' }
 };
+
+export const history: Constant = {
+  en: {
+    title: 'MZ History',
+    content: [
+      {
+        id: 1,
+        tag: 'p',
+        text: `The contents of the Pietersburg [Polokwane] Shul and a Sefer Torah were brought from South Africa and presented to the Mevasser Zion Shul in Tel Mond. The opening of the Shul as well as the Hachnasat Torah ceremony took place on the evening of Sunday, 23rd June 2013. The celebration was attended by more than 300 people and the Tel Mond Kehilla excelled itself with the arrangements. The event was well attended by South Africans originally from Pietersburg, as well as Messina, Louis Trichardt and Potgietersrus.`
+      }
+    ]
+  },
+  he: {
+    title: 'בית',
+    content: [
+      {
+        id: 1,
+        tag: 'p',
+        text: `תכולת בית הכנסת בפיטרסבורג וספר תורה הובאה מדרום אפריקה והוגשה לבית הכנסת מבשר ציון בתל מונד. פתיחת בית הכנסת וכן טקס "הכנסת התורה" התקיים במוצאי יום ראשון, כ"ג ביוני 2013. בשמחה השתתפו למעלה מ-300 איש והקהילה תל מונד הצטיינה בסידורים. לאירוע נכחו היטב דרום אפריקאים במקור מפיטרסבורג, כמו גם מסינה, לואי טריכרדט ופוטגיטרסרוס.`
+      }
+    ]
+  }
+};
